@@ -24,10 +24,10 @@ div .social-nav {
   padding: 5px 200px 5px 0;
   align-items: center;
   position: fixed;
-  background: var(--blackish);
+  background: linear-gradient(to right, var(--redish), orange);
   width: 100%;
   z-index: 9999;
-  color: var(--lightcolor);
+  color: var(--blackish);
 }
 
 nav {
@@ -39,7 +39,8 @@ nav {
   z-index: 999;
   width: 100%;
   background-color: var(--blackish);
-  padding: 30px 15% 0 15%;
+  padding: 20px 15% 0 15%;
+  margin-top: 10px;
 }
 
 nav a img {
@@ -49,7 +50,7 @@ nav a img {
 .nav-btn {
   border: 5px solid var(--redish);
   text-decoration: none;
-  padding: 6px 8px;
+  padding: 6px 10px;
 }
 
 .nav-btn span {
@@ -78,7 +79,9 @@ nav a img {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/portfolio_img_3.jpg") center/cover no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("img/portfolio_img_3.jpg") center/cover no-repeat;
 }
 
 .main-section h1 {
@@ -102,7 +105,6 @@ nav a img {
   text-decoration: none;
 }
 
-
 /* ======================Footer==================== */
 
 footer {
@@ -124,12 +126,11 @@ footer h2 {
 .niche div {
   height: 4px;
   width: 100px;
-  background: #fff;
   border: none;
   background: var(--redish);
 }
 
-footer div {
+.footer-section div {
   display: flex;
   gap: 10px;
   justify-content: space-between;
@@ -140,7 +141,7 @@ footer div > img {
   height: 40px;
 }
 
-footer p {
+.footer-section p {
   color: var(--lightcolor);
   align-items: center;
   font-size: 0.9rem;

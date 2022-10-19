@@ -39,7 +39,8 @@ nav {
   z-index: 999;
   width: 100%;
   background-color: var(--blackish);
-  padding: 30px 15% 0 15%;
+  padding: 20px 15% 0 15%;
+  margin-top: 10px;
 }
 
 .nav-btn {
@@ -78,7 +79,9 @@ nav a img {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/header_main_img.jpg") center/cover no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("img/header_main_img.jpg") center/cover no-repeat;
 }
 
 .main-section h1 {
@@ -108,7 +111,6 @@ nav a img {
 .main-section a {
   text-decoration: none;
 }
-
 
 /* ===========================Main Program ================================= */
 
@@ -173,7 +175,12 @@ main .program-section {
   transform: translateX(-50%);
   width: 0%;
   height: 5px;
-  background: linear-gradient(45deg, rgba(226, 105, 24, 1) 0%, rgb(240, 43, 17) 100%);
+  background:
+    linear-gradient(
+      45deg,
+      rgba(226, 105, 24, 1) 0%,
+      rgb(240, 43, 17) 100%
+    );
   transition: var(--transition);
 }
 
@@ -199,7 +206,6 @@ main .program-section {
   color: var(--lightcolor);
   margin: 5%;
 }
-
 
 /* ================================future-speakers================================ */
 
@@ -265,7 +271,6 @@ main .program-section {
   padding: 10px 20px;
 }
 
-
 /* ======================Footer==================== */
 
 footer {
@@ -275,7 +280,7 @@ footer {
   place-items: center;
 }
 
-footer > h2 {
+.footer-section > h2 {
   color: var(--lightcolor);
 }
 
@@ -291,18 +296,18 @@ footer > h2 {
   background: var(--redish);
 }
 
-footer > div {
+.footer-section > div {
   display: flex;
   gap: 10px;
   justify-content: space-between;
 }
 
-div > img {
+.footer-section img {
   width: 150px;
   height: 40px;
 }
 
-footer > p {
+.footer-section > p {
   color: var(--lightcolor);
   align-items: center;
   font-size: 0.9rem;
@@ -410,7 +415,9 @@ footer > p {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/header_main_img.jpg") center/cover no-repeat;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url("img/header_main_img.jpg") center/cover no-repeat;
   }
 
   .main-section h1 {
@@ -504,7 +511,12 @@ footer > p {
     transform: translateX(-50%);
     width: 0%;
     height: 5px;
-    background: linear-gradient(45deg, rgba(226, 105, 24, 1) 0%, rgb(240, 43, 17) 100%);
+    background:
+      linear-gradient(
+        45deg,
+        rgba(226, 105, 24, 1) 0%,
+        rgb(240, 43, 17) 100%
+      );
     transition: var(--transition);
   }
 
@@ -521,7 +533,6 @@ footer > p {
     padding: 20px 30px;
     background: linear-gradient(to right, var(--redish), orange);
     font-size: 0.9rem;
-    color: var(--blackish);
     border: none;
     margin: auto;
     color: var(--lightcolor);
@@ -559,7 +570,7 @@ footer > p {
 
   .speakers-items img {
     width: 480px;
-    height: fit-content;
+    height: max-content;
   }
 
   .speakers-items div {
@@ -593,7 +604,7 @@ footer > p {
     place-items: center;
   }
 
-  footer > h2 {
+  .footer-section > h2 {
     color: var(--lightcolor);
   }
 
@@ -605,26 +616,24 @@ footer > p {
   .niche div {
     height: 4px;
     width: 100px;
-    background: #fff;
     border: none;
     background: var(--redish);
   }
 
-  footer div {
+  .footer-section div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    align-items: center;
     gap: 1px;
   }
 
-  footer div > img {
+  .footer-section div > img {
     width: 150px;
     height: 40px;
   }
 
-  footer p {
+  .footer-section p {
     color: var(--lightcolor);
     align-items: center;
     font-size: 0.9rem;
