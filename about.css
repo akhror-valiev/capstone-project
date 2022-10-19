@@ -1,0 +1,242 @@
+:root {
+  --blackish: #272a31;
+  --redish: #ec5242;
+  --lightcolor: #d3d3d3;
+  --transition: all 300ms linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+div .social-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 5px 200px 5px 0;
+  align-items: center;
+  position: fixed;
+  background: var(--blackish);
+  width: 100%;
+  z-index: 9999;
+  color: var(--lightcolor);
+}
+
+nav {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: var(--blackish);
+  padding: 30px 15% 0 15%;
+}
+
+nav a img {
+  width: 45px;
+}
+
+.nav-btn {
+  border: 5px solid var(--redish);
+  text-decoration: none;
+  padding: 6px 8px;
+}
+
+.nav-btn span {
+  color: var(--redish);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(to right, var(--redish), orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-section {
+  min-height: calc(100vh - 200px);
+  padding: 20% 20% 0 20%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/portfolio_img_3.jpg") center/cover no-repeat;
+}
+
+.main-section h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+  font-weight: 900;
+  text-align: center;
+  background: linear-gradient(to right, var(--redish), orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-section p {
+  font-size: 1.2rem;
+  color: var(--lightcolor);
+  line-height: 1.8;
+  text-align: center;
+}
+
+.main-section a {
+  text-decoration: none;
+}
+
+
+/* ======================Footer==================== */
+
+footer {
+  background: var(--blackish);
+  height: 200px;
+  display: grid;
+  place-items: center;
+}
+
+footer h2 {
+  color: var(--lightcolor);
+}
+
+.niche {
+  display: flex;
+  justify-content: center;
+}
+
+.niche div {
+  height: 4px;
+  width: 100px;
+  background: #fff;
+  border: none;
+  background: var(--redish);
+}
+
+footer div {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+footer div > img {
+  width: 150px;
+  height: 40px;
+}
+
+footer p {
+  color: var(--lightcolor);
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 767px) {
+  div .social-nav {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: var(--blackish);
+    padding: 0 20px 0 20px;
+  }
+
+  nav a img {
+    width: 40px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 5px;
+    background: linear-gradient(to right, var(--redish), orange);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+    transition: 0.5s ease;
+    background: linear-gradient(to right, var(--redish), orange);
+  }
+
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+    transition: 0.5s ease;
+    background: linear-gradient(to right, var(--redish), orange);
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+    transition: 0.5s ease all;
+    background: linear-gradient(to right, var(--redish), orange);
+  }
+
+  .nav-menu {
+    width: 100%;
+    left: -100%;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background: var(--blackish);
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    padding-top: 80px;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+    background: linear-gradient(to right, var(--redish), orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  nav li a {
+    text-decoration: none;
+  }
+}
