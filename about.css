@@ -161,15 +161,16 @@ main .past-summit {
 .past-summit .past-summit-img {
   display: flex;
   gap: 20px;
-  opacity: 0.5;
+  
 }
 
 .past-summit-img img {
   width: 280px;
   height: 180px;
-  filter:
-    grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg)
-    saturate(800%) contrast(1);
+  
+
+  filter: opacity(0.5) drop-shadow(0 0 #ff0000)
+  
 }
 
 /* ======================Footer==================== */
