@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Space Travellers' Hub
+# E-marketing Solution Agency
 
 > This application/Capstone project is built based on HTML, CSS and JavaScript.
 
