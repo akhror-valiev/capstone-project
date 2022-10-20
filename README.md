@@ -65,7 +65,9 @@ Give a ⭐️ if you like this project!
 
 This is a project done during HTML CSS JS module at **[Microverse](https://www.microverse.org/)**, a remote web-developer school, using their support and frameworks provided.<br />
 
-The design is from [Behance](https://www.behance.net/adagio07)
+The design is from [Behance](https://www.behance.net/adagio07) and
+
+original design idea by [Cindy Shin](https://www.behance.net/adagio07)
 
 ## 📝 License
 
