@@ -89,7 +89,6 @@ nav a img {
   position: relative;
   display: flex;
   flex-direction: column;
-  
   gap: 20px;
   align-items: center;
   background:
@@ -123,7 +122,7 @@ nav a img {
   background: var(--blackish);
 }
 
-.main-section .section-email{
+.main-section .section-email {
   color: var(--lightcolor);
   font-weight: bold;
 }
@@ -132,9 +131,8 @@ nav a img {
   text-decoration: none;
 }
 
-
-/*========================About Summit ========================*/
-.about-summit{
+/* ========================About Summit ======================== */
+.about-summit {
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -151,35 +149,30 @@ nav a img {
   padding: 10px 40px 10px 40px;
 }
 
-/*======================Past Summit Section=====================*/
-main .past-summit{
+/* ======================Past Summit Section===================== */
+main .past-summit {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:20px;
+  gap: 20px;
   padding: 30px 25% 50px 25%;
 }
 
-.past-summit .past-summit-img{
+.past-summit .past-summit-img {
   display: flex;
   gap: 20px;
   opacity: 0.5;
-  
-  
 }
 
-.past-summit-img img{
+.past-summit-img img {
   width: 280px;
   height: 180px;
-
-  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(800%) contrast(1);
-  
+  filter:
+    grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg)
+    saturate(800%) contrast(1);
 }
 
-
 /* ======================Footer==================== */
-
-
 
 footer {
   background: var(--blackish);
@@ -189,41 +182,35 @@ footer {
   padding: 30px 20% 50px 20%;
 }
 
-footer .footer-logo{
+footer .footer-logo {
   display: flex;
   gap: 2px;
   align-items: center;
 }
 
-.footer-logo img{
+.footer-logo img {
   width: 50px;
   height: 50px;
 }
 
-.footer-logo h4{
+.footer-logo h4 {
   color: var(--lightcolor);
   font-size: 1.5rem;
   line-height: 0.8;
   overflow: hidden;
-
 }
 
-footer .footer-copyright{
+footer .footer-copyright {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
   justify-content: center;
 }
 
-.footer-copyright p{
+.footer-copyright p {
   color: var(--lightcolor);
   font-size: 0.9rem;
-  
- 
 }
-
-
 
 @media only screen and (max-width: 767px) {
   div .social-nav {
@@ -310,7 +297,6 @@ footer .footer-copyright{
     background: linear-gradient(to right, var(--redish), orange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
   }
 
   .nav-menu.active {
@@ -323,7 +309,7 @@ footer .footer-copyright{
 
   .main-section {
     min-height: 100vh;
-    padding:20% 1% 0 1%;
+    padding: 20% 1% 0 1%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -333,7 +319,7 @@ footer .footer-copyright{
       linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
       url("img/portfolio_img_3.jpg") center/cover no-repeat;
   }
-  
+
   .main-section h1 {
     font-size: 3rem;
     line-height: 1;
@@ -344,14 +330,14 @@ footer .footer-copyright{
     -webkit-text-fill-color: transparent;
     overflow: hidden;
   }
-  
+
   .main-section h2 {
     color: var(--lightcolor);
     font-size: 1.1rem;
     padding: 10px;
     text-align: center;
   }
-  
+
   .main-section .section-text {
     font-size: 1rem;
     color: var(--lightcolor);
@@ -361,21 +347,20 @@ footer .footer-copyright{
     padding: 10px;
     background: var(--blackish);
   }
-  
-  .main-section .section-email{
+
+  .main-section .section-email {
     color: var(--lightcolor);
     font-weight: bold;
     padding: 10px;
     text-align: center;
   }
-  
+
   .main-section a {
     text-decoration: none;
   }
-  
-  
-  /*========================About Summit ========================*/
-  .about-summit{
+
+  /* ========================About Summit ======================== */
+  .about-summit {
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -385,44 +370,35 @@ footer .footer-copyright{
     border-top: 3px solid var(--lightcolor);
     border-bottom: 3px solid var(--lightcolor);
   }
-  
+
   .about-summit div {
     border: 2px solid var(--lightcolor);
     padding: 10px 40px 10px 40px;
   }
-  
-  /*======================Past Summit Section=====================*/
-  main .past-summit{
+
+  /* ======================Past Summit Section===================== */
+  main .past-summit {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     padding: 30px 5% 50px 5%;
   }
-  
-  .past-summit .past-summit-img{
-    
+
+  .past-summit .past-summit-img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
-    
-    
   }
-  
-  .past-summit-img img{
+
+  .past-summit-img img {
     width: 420px;
     height: 320px;
-    opacity: .7;
-    
-    
+    opacity: 0.7;
   }
-  
-  
+
   /* ======================Footer==================== */
-  
-  
-  
+
   footer {
     background: var(--blackish);
     height: 200px;
@@ -430,45 +406,39 @@ footer .footer-copyright{
     grid-template-columns: 50% 50%;
     padding: 30px 10% 50px 10%;
   }
-  
-  footer .footer-logo{
+
+  footer .footer-logo {
     display: flex;
     gap: 2px;
     align-items: center;
   }
-  
-  .footer-logo img{
+
+  .footer-logo img {
     width: 50px;
     height: 50px;
   }
-  
-  .footer-logo h4{
-    
+
+  .footer-logo h4 {
     color: var(--lightcolor);
     font-size: 1rem;
     line-height: 0.8;
     overflow: hidden;
-  
   }
-  
-  footer .footer-copyright{
-    
+
+  footer .footer-copyright {
     display: flex;
     flex-direction: column;
     gap: 5px;
     justify-content: center;
   }
-  
-  .footer-copyright p{
+
+  .footer-copyright p {
     color: var(--lightcolor);
     font-size: 0.9rem;
     overflow: hidden;
-   
   }
 
-  .footer-copyright .logo-text{
+  .footer-copyright .logo-text {
     display: none;
   }
-
-
 }

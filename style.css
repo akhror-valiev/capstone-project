@@ -73,7 +73,7 @@ nav a img {
 
 .main-section {
   min-height: 100vh;
-  padding: 15% 40%  0 15%;
+  padding: 15% 40% 0 15%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -84,12 +84,11 @@ nav a img {
     url("img/header_main_img.jpg") center/cover no-repeat;
 }
 
-.main-section .section-day{
+.main-section .section-day {
   font-weight: 700;
-  
 }
 
-.main-section .section-address{
+.main-section .section-address {
   color: var(--lightcolor);
 }
 
@@ -277,7 +276,6 @@ main .program-section {
   justify-content: center;
   background-color: #ec5242;
   align-items: center;
-  
 }
 
 .future-speakers .load-btn {
@@ -328,51 +326,44 @@ footer {
   font-size: 0.9rem;
 }
 
-.footer-logo-info{
+.footer-logo-info {
   background: var(--blackish);
-  margin-top: 20px 0 20px 0;
+  margin: 20px 0 20px 0;
   display: grid;
   overflow: hidden;
   grid-template-columns: 40% 60%;
   padding: 0 15% 0 15%;
 }
 
-.footer-logo-info .footer-logo{
+.footer-logo-info .footer-logo {
   display: flex;
   gap: 2px;
   align-items: center;
 }
 
-.footer-logo img{
+.footer-logo img {
   width: 40px;
   height: 40px;
 }
 
-.footer-logo h4{
+.footer-logo h4 {
   color: var(--lightcolor);
   font-size: 1.5rem;
   line-height: 0.8;
   overflow: hidden;
-
 }
 
-.footer-logo-info .footer-copyright{
+.footer-logo-info .footer-copyright {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
   justify-content: center;
 }
 
-.footer-copyright p{
+.footer-copyright p {
   color: var(--lightcolor);
   font-size: 0.9rem;
-  
- 
 }
-
-
-
 
 @media only screen and (max-width: 767px) {
   div .social-nav {
@@ -498,7 +489,7 @@ footer {
     color: var(--lightcolor);
     font-weight: 300;
     font-size: 2rem;
-    text-align:start;
+    text-align: start;
   }
 
   .main-section p {
@@ -652,7 +643,6 @@ footer {
     justify-content: center;
     background-color: #ec5242;
     align-items: center;
-    
   }
 
   .future-speakers .load-btn {
@@ -688,54 +678,38 @@ footer {
     background: var(--redish);
   }
 
-.footer-logo-info {
+  .footer-logo-info {
     background: var(--blackish);
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     padding: 0 10% 0 10%;
   }
 
-  .footer-copyright .logo-text{
+  .footer-copyright .logo-text {
     display: none;
   }
 
-  
-  
-  .footer-logo img{
+  .footer-logo img {
     width: 40px;
     height: 40px;
   }
-  
-  .footer-logo h4{
+
+  .footer-logo h4 {
     color: var(--lightcolor);
     font-size: 1rem;
     line-height: 0.8;
     overflow: hidden;
-  
   }
-  
-  .footer-logo-info .footer-copyright{
+
+  .footer-logo-info .footer-copyright {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
     justify-content: center;
   }
-  
-  .footer-copyright p{
+
+  .footer-copyright p {
     color: var(--lightcolor);
     font-size: 0.9rem;
-    
-   
   }
-
-  
-  
- 
-  
-  
-    
-  
-
-
 }
