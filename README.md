@@ -13,12 +13,11 @@
 ## Built With
 
 - Major languages: JavaScript, HTML & CSS;
-- Frameworks: ----;
-- Technologies used: (Redux), GitHub, GitFlow, Terminal;
+- Technologies used: GitHub, GitFlow, Terminal;
 
 ## Live Demo
 
-[Live Demo Link](/)
+[Live Demo Link](https://akhror-valiev.github.io/capstone-project/)
 
 ## Getting Started
 
@@ -65,6 +64,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 This is a project done during HTML CSS JS module at **[Microverse](https://www.microverse.org/)**, a remote web-developer school, using their support and frameworks provided.<br />
+
+The design is from [Behance](https://www.behance.net/adagio07)
 
 ## 📝 License
 
