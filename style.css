@@ -73,39 +73,53 @@ nav a img {
 
 .main-section {
   min-height: 100vh;
-  padding: 20% 20% 0 20%;
+  padding: 15% 40%  0 15%;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: center;
+  align-items: flex-start;
   background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("img/header_main_img.jpg") center/cover no-repeat;
 }
 
+.main-section .section-day{
+  font-weight: 700;
+  
+}
+
+.main-section .section-address{
+  color: var(--lightcolor);
+}
+
 .main-section h1 {
-  font-size: 3rem;
-  line-height: 1.3;
+  font-size: 3.2rem;
+  line-height: 1;
   font-weight: 900;
-  text-align: center;
+  text-align: start;
   background: linear-gradient(to right, var(--redish), orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
 }
 
 .main-section h2 {
   color: var(--lightcolor);
   font-weight: 300;
   font-size: 2rem;
-  text-align: center;
+  text-align: start;
 }
 
 .main-section p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--lightcolor);
-  line-height: 1.8;
+  line-height: 1.5;
   text-align: center;
+  overflow: hidden;
+  border: 3px solid var(--lightcolor);
+  padding: 5px 5px;
+  margin: 0;
 }
 
 .main-section a {
@@ -263,6 +277,7 @@ main .program-section {
   justify-content: center;
   background-color: #ec5242;
   align-items: center;
+  
 }
 
 .future-speakers .load-btn {
@@ -313,6 +328,52 @@ footer {
   font-size: 0.9rem;
 }
 
+.footer-logo-info{
+  background: var(--blackish);
+  margin-top: 20px 0 20px 0;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 40% 60%;
+  padding: 0 15% 0 15%;
+}
+
+.footer-logo-info .footer-logo{
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.footer-logo img{
+  width: 40px;
+  height: 40px;
+}
+
+.footer-logo h4{
+  color: var(--lightcolor);
+  font-size: 1.5rem;
+  line-height: 0.8;
+  overflow: hidden;
+
+}
+
+.footer-logo-info .footer-copyright{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  justify-content: center;
+}
+
+.footer-copyright p{
+  color: var(--lightcolor);
+  font-size: 0.9rem;
+  
+ 
+}
+
+
+
+
 @media only screen and (max-width: 767px) {
   div .social-nav {
     display: none;
@@ -328,6 +389,8 @@ footer {
     width: 100%;
     background-color: var(--blackish);
     padding: 0 20px 0 20px;
+    margin: 0;
+    overflow: hidden;
   }
 
   .nav-btn {
@@ -345,6 +408,7 @@ footer {
     height: 25px;
     width: 30px;
     cursor: pointer;
+    overflow: hidden;
   }
 
   .bar {
@@ -424,7 +488,7 @@ footer {
     font-size: 3rem;
     line-height: 1.3;
     font-weight: 900;
-    text-align: center;
+    text-align: start;
     background: linear-gradient(to right, var(--redish), orange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -434,7 +498,7 @@ footer {
     color: var(--lightcolor);
     font-weight: 300;
     font-size: 2rem;
-    text-align: center;
+    text-align:start;
   }
 
   .main-section p {
@@ -588,20 +652,24 @@ footer {
     justify-content: center;
     background-color: #ec5242;
     align-items: center;
+    
   }
 
   .future-speakers .load-btn {
     position: absolute;
     bottom: 20px;
     padding: 10px 20px;
+    width: 90%;
+    max-width: 90%;
   }
 
   /* ======================Footer==================== */
   footer {
     background: var(--blackish);
-    height: 200px;
+    min-height: 300px;
     display: grid;
     place-items: center;
+    overflow: hidden;
   }
 
   .footer-section > h2 {
@@ -620,22 +688,54 @@ footer {
     background: var(--redish);
   }
 
-  .footer-section div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1px;
+.footer-logo-info {
+    background: var(--blackish);
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding: 0 10% 0 10%;
   }
 
-  .footer-section div > img {
-    width: 150px;
+  .footer-copyright .logo-text{
+    display: none;
+  }
+
+  
+  
+  .footer-logo img{
+    width: 40px;
     height: 40px;
   }
-
-  .footer-section p {
+  
+  .footer-logo h4{
     color: var(--lightcolor);
-    align-items: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 0.8;
+    overflow: hidden;
+  
   }
+  
+  .footer-logo-info .footer-copyright{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    justify-content: center;
+  }
+  
+  .footer-copyright p{
+    color: var(--lightcolor);
+    font-size: 0.9rem;
+    
+   
+  }
+
+  
+  
+ 
+  
+  
+    
+  
+
+
 }
